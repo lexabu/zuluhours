@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      window.onload = () => {
+        var intervalId = window.setInterval(function () {
+          var date = new Date().toISOString();
+
+          console.log(date);
+
+          var element = document.querySelector("#date");
+
+          console.log(element);
+
+          element.textContent = date;
+        }, 100);
+      };
+    </script>
+  </head>
+
+  <body>
+    <h1>
+      Time is
+      <span id="date" />
+    </h1>
+  </body>
+</html>
